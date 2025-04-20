@@ -1,0 +1,11 @@
+# Core deep learning libraries
+tensorflow>=2.8.0
+keras>=2.8.0
+opencv-python>=4.5.5
+Pillow>=9.0.0
+matplotlib>=3.5.1
+albumentations>=1.1.0
+numpy>=1.22.0
+scikit-learn>=1.0.2
+requests>=2.27.1
+h5py>=3.6.0
