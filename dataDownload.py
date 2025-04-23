@@ -9,7 +9,7 @@ params = {
     "dataset": "zimhe/pseudo-floor-plan-12k",
     "config": "default",
     "split": "train",
-    "offset": 0,
+    "offset": 10,
     "length": 100  # Adjust as needed
 }
 

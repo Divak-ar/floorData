@@ -10,6 +10,20 @@ This project implements a deep learning model for automatic wall detection in ar
 
 ![Floor Plan Example](huggingface_dataset/results_visualization.png)
 
+### 🌟 Key Features
+
+- **Multiple Detection Methods**: UNet, DeepLabV3+, and direct image processing
+- **Wall Coordinate Extraction**: Converts wall masks to line coordinates
+- **3D Visualization Ready**: Outputs coordinates in JSON format for 3D rendering
+
+## 🔄 Model Comparison
+
+| Model | Advantages | Use Case |
+|-------|------------|----------|
+| **UNet** (UnetModel.ipynb) | 🚀 Faster training<br>🎯 Better accuracy<br>🧠 Lower memory usage | **Recommended** for all wall detection tasks |
+| **DeepLabV3+** (main.py) | 🔍 Higher capacity<br>🌐 Pre-trained backbone | Complex floor plans with many details |
+| **Direct Processing** | ⚡ No training required<br>📊 Works on binary images | When you already have wall masks |
+
 ## 🛠️ Installation
 
 ### Step 1: Clone the repository
@@ -60,6 +74,9 @@ The training process:
 4. Saves the best model during training
 5. Visualizes prediction results
 
+## Using UNet Model (Recommended)
+Open and run the `UnetModel.ipynb` notebook for better wall detection results.
+
 ### Inference on new images
 ```python
 from main import predict_on_new_image
@@ -81,9 +98,10 @@ The wall detection model uses a DeepLabV3+ architecture with:
 
 ## 📈 Results
 
-The model achieves:
-- High IoU (Intersection over Union) for wall segmentation
-- Robust performance on varied floor plan styles
+The UNet model typically achieves:
+- Higher IoU (Intersection over Union) for wall segmentation
+- Better line detection accuracy
+- Faster inference time
 
 ## 🤝 Contributing
 
