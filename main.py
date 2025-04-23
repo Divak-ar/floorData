@@ -60,7 +60,7 @@ IMG_HEIGHT = 512
 IMG_WIDTH = 512
 NUM_CLASSES = 2  # Wall and background
 BATCH_SIZE = 4
-EPOCHS = 30
+EPOCHS = 50
 
 # ============== DATA LOADING AND AUGMENTATION ==============
 
